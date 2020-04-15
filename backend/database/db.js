@@ -1,3 +1,3 @@
 module.exports = {
-  db: 'mongodb://localhost:27017/angular8mean'
+  db: 'mongodb+srv://michael:2Uv6tGgEIldxuHEu@cluster0-jxctg.mongodb.net/flex-node?retryWrites=true&w=majority'
 };

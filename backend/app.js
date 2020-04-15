@@ -17,6 +17,17 @@ mongoose.connect(dataBaseConfig.db, {
   }
 )
 
+// mongoose
+//   .connect(
+//     "mongodb+srv://michael:2Uv6tGgEIldxuHEu@cluster0-jxctg.mongodb.net/flex-node?retryWrites=true&w=majority"
+//   )
+//   .then(() => {
+//     console.log("Connected to database!");
+//   })
+//   .catch(() => {
+//     console.log("Connection failed!");
+//   });
+
 // Set up express js port
 const studentRoute = require('./routes/student.route')
 
@@ -35,7 +46,7 @@ app.use(express.static(path.join(__dirname, 'dist/angular8-meanstack-angular-mat
 app.use('/api', studentRoute)
 
 // PORT
-const port = process.env.PORT || 8000;
+const port = process.env.PORT || 4000;
 
 app.listen(port, () => {
   console.log('Connected to port ' + port)
